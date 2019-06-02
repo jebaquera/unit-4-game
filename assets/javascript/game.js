@@ -22,7 +22,7 @@ $("#losses").text(losses);
 
 // Reset game
 function reset(){
-    Random = Math.floor(Math.random()*102+19);
+    Random = Math.floor(Math.random() * 102 + 19);
     console.log(Random)
     $('#scoreToMatch').text(Random);
     numRed = Math.floor(Math.random() * 12 + 1);
@@ -42,7 +42,7 @@ reset();
 }
 // Display losses
 function loser(){
-alert("Sorry! You lose!");
+alert("Sorry! You lose. Try again!");
 losses++;
 $("#losses").text(losses);
 reset()
