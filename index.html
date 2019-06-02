@@ -14,59 +14,74 @@
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>Crystals Collector</h1>
+                </div>
+            </div>         
+        </div>
+        
         <div class="container">
-            <h1>Crystals Collector</h1>
-
-            <div class="instruxText">
-                <h3>Instructions for How to Play</h3>
-                <hr />
-                <p>
-                    You will be given a random number at the start of the game. This is the number that you will need to match to win the game.
-                <br /> <br />
-                    There are four crystals below that are worth a certain point value. By clicking on a crystal you will add a specific amount of points to your total score.
-                <br /> <br />      
-                    To win the game you must exactly match your total score to the random number given at the beginning of the game. You lost the game if your total score goes above the random number.
-                <br /> <br />        
-                    Each time the game starts, it will generate new values for each of the crystals. These values are hidden from you until you click on a gem.
-                </p>
+            <div class="row">
+                <div class="col-sm-12 instruxText">
+                    <h3>Instructions for How to Play</h3>
+                    <hr />
+                    <p>
+                        You will be given a random number at the start of the game. This is the number that you will need to match to win the game.
+                    <br /> <br />
+                        There are four crystals below that are worth a certain point value. By clicking on a crystal you will add a specific amount of points to your total score.
+                    <br /> <br />      
+                        To win the game you must exactly match your total score to the random number given at the beginning of the game. You lost the game if your total score goes above the random number.
+                    <br /> <br />        
+                        Each time the game starts, it will generate new values for each of the crystals. These values are hidden from you until you click on a gem.
+                    </p>
+                </div>
             </div>
 
-            <div class="matchScore">
-                <h4>Score to match:</h4>
-            <!-- The random generated number between 19-120 will display here.-->
-                <h2>random number</h2>
+            <div class="row scoreboard">
+                <div class="col-sm-9">
+                    <h4>Score to match: <span id="scoreToMatch"></span></h4>
+                    <!-- The random generated number between 19-120 will display here.
+                    <h2>random number</h2> -->
+                </div>
+                <div class="col-sm-3">
+                    <!-- The scoreboard will display the win and loss record for the current user's session.-->
+                    <!-- Each game, the scoreboard will display alerts when a user wins or loses.-->
+                    <h4>Wins: <span id="wins"></span></h4>
+                    <h4>Losses: <span id="losses"></span></h4>
+                </div>
             </div>
 
-            <div class="scoreBoard">
-            <!-- The scoreboard will display the win and loss record for the current user's session.-->
-            <!-- Each game, the scoreboard will display alerts when a user wins or loses.-->
-                <h4>Wins:</h4>
-                <h4>Losses:</h4>
+            <!-- This area will display the four crystal images. -->
+            <div class="row crystalButtons">
+                <div class="col-sm-3">
+                    <img class="red-crystal" src="http://chittagongit.com/images/crystal-icon-png/crystal-icon-png-1.jpg" width="200px" height="200px" />
+                </div>
+                <div class="col-sm-3">
+                    <img class="yellow-crystal" src="http://chittagongit.com/images/crystal-icon-png/crystal-icon-png-23.jpg" width="200px" height="200px" />
+                </div>
+                <div class="col-sm-3">
+                    <img class="green-crystal" src="http://chittagongit.com/images/crystal-icon-png/crystal-icon-png-4.jpg" width="200px" height="200px" />
+                </div>
+                <div class="col-sm-3">
+                    <img class="blue-crystal" src="http://chittagongit.com/images/crystal-icon-png/crystal-icon-png-2.jpg" width="200px" height="200px" />    
+                </div>
             </div>
 
-            <div class="crystalButtons">
-            <!-- This area will display the four crystal buttons and images.-->
-            <!-- <a href="http://chittagongit.com/icon/crystal-icon-png-1.html" title="Crystal Icon Png #300945"> --> <img class="red-crystal" src="http://chittagongit.com/images/crystal-icon-png/crystal-icon-png-1.jpg" width="150" /> <!-- </a> -->
-            <!-- <a href="http://chittagongit.com/icon/crystal-icon-png-23.html" title="Crystal Icon Png #300950"> --> <img class="yellow-crystal" src="http://chittagongit.com/images/crystal-icon-png/crystal-icon-png-23.jpg" width="150" /> <!-- </a> -->
-            <!-- <a href="http://chittagongit.com/icon/crystal-icon-png-4.html" title="Crystal Icon Png #300972"> --> <img class="green-crystal" src="http://chittagongit.com/images/crystal-icon-png/crystal-icon-png-4.jpg" width="150" /> <!-- </a> -->
-            <!-- <a href="http://chittagongit.com/icon/crystal-icon-png-2.html" title="Crystal Icon Png #300965"> --> <img class="blue-crystal" src="http://chittagongit.com/images/crystal-icon-png/crystal-icon-png-2.jpg" width="150" /> <!-- </a> -->    
-            </div>
-
-            <div class="totalScore">
-                <h4>Your current total score is:</h4>
-            </div>
-
-            <div class="totalDisplay">
             <!-- This area will display the current user score.-->
-                <h2>random number</h2>
+            <div class="row userScore">
+                <div class="col-sm-12">
+                <h4>Your total score is: <span id="totalScore"></span></h4>
+                </div>
             </div>
         
         </div>
         
-    <!-- Javascript -->
-    <script src="assets/javascript/game.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- Javascript -->
+        <script src="assets/javascript/game.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
 </html>

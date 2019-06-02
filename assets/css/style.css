@@ -1,17 +1,21 @@
 body {
     margin-top: 40px;
-    background-color: blanchedalmond;
+    background-color: ivory;
     width: 100%;
 }
 
 h1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 54px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 62px;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     padding-bottom: 30px;
+ /* width: 600px;
+    height: 200px;
+    background-color: black;
+    align-content: center; */
 }
 
 h2 {
@@ -25,7 +29,7 @@ h2 {
 
 h3 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 28px;
+    font-size: 21px;
     line-height: 1.5em;
     font-weight: bold;
     color: darkgreen;
@@ -43,7 +47,7 @@ h4 {
 
 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.5em;
     font-weight: normal;
     color: midnightblue;
@@ -59,7 +63,7 @@ hr {
 }
 
 img {
-    background-color: lightblue;
+    background-color: white;
     margin-right: 10px;
 }
 
@@ -69,17 +73,58 @@ p:first-letter {
 }
 
 .container {
-    width: 70%;
+    width: 80%;
     background-color: aliceblue;
     padding: 40px;
     border: 9px solid;
-    border-color: darkgoldenrod;
-    border-radius: 20px;
+    border-color: aliceblue;
+    border-radius: 10px;
 }
 
 .instruxText {
     background-color: white;
     border: 9px solid;
     border-color: white;
-    border-radius: 20px; 
+    border-radius: 10px; 
+}
+
+.jumbotron {
+    background-image: url("../images/purple-wallpaper.jpg");
+    background-size: cover;
+}
+
+.jumbotron h1 {
+    color: darkorange;
+    text-shadow: 3px 3px mintcream;
+/*  text-shadow: -2px -2px yellow; */
+}
+
+.text-center {
+    text-align: center;
+}
+
+.scoreboard {
+    background-color: white;
+    border: 9px solid;
+    border-color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.crystalButtons {
+    background-color: white;
+    border: 9px solid;
+    border-color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+.userScore {
+    background-color: white;
+    border: 9px solid;
+    border-color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-left: 10px;
 }
