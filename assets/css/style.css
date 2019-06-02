@@ -20,22 +20,24 @@ h1 {
     align-content: center; */
 }
 
+/*
 h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 48px;
     font-weight: bold;
     text-align: left;
     color: chartreuse;
-}
+} */
 
 
-h3 {
+h3,
+span {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 21px;
-    line-height: 1.5em;
+    font-size: 27px;
     font-weight: bold;
-    color: darkgreen;
+    color: midnightblue;
     padding: 20px;
+    text-align: center;
 }
 
 
@@ -119,7 +121,7 @@ p:first-letter {
     border: 9px solid;
     border-color: white;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 10px;
     padding-left: 60px;
 }
 
@@ -128,6 +130,6 @@ p:first-letter {
     border: 9px solid;
     border-color: white;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 10px;
     padding-left: 20px;
 }
