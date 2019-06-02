@@ -1,18 +1,20 @@
 body {
-    margin-top: 40px;
-    background-color: ivory;
+    margin: 0;
+/*  background-color: white; */
     width: 100%;
+    background-color: aliceblue;
 }
 
 h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 62px;
+    font-size: 70px;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 0.2em;
-    padding-bottom: 30px;
- /* width: 600px;
+    letter-spacing: 0.1em;
+    word-spacing: 0.15em;
+/*  padding-bottom: 30px;
+    width: 600px;
     height: 200px;
     background-color: black;
     align-content: center; */
@@ -64,7 +66,7 @@ hr {
 
 img {
     background-color: white;
-    margin-right: 10px;
+/*  margin-right: 10px; */
 }
 
 p:first-letter {
@@ -78,7 +80,7 @@ p:first-letter {
     padding: 40px;
     border: 9px solid;
     border-color: aliceblue;
-    border-radius: 10px;
+/*  border-radius: 10px; */
 }
 
 .instruxText {
@@ -89,13 +91,13 @@ p:first-letter {
 }
 
 .jumbotron {
-    background-image: url("../images/purple-wallpaper.jpg");
+    background-image: url("../images/ore-gem.jpg");
     background-size: cover;
 }
 
 .jumbotron h1 {
-    color: darkorange;
-    text-shadow: 3px 3px mintcream;
+    color: mintcream;
+    text-shadow: 3px 3px black;
 /*  text-shadow: -2px -2px yellow; */
 }
 
@@ -109,6 +111,7 @@ p:first-letter {
     border-color: white;
     border-radius: 10px;
     margin-top: 20px;
+    padding-left: 20px;
 }
 
 .crystalButtons {
@@ -117,7 +120,7 @@ p:first-letter {
     border-color: white;
     border-radius: 10px;
     margin-top: 20px;
-    padding-left: 10px;
+    padding-left: 60px;
 }
 
 .userScore {
@@ -126,5 +129,5 @@ p:first-letter {
     border-color: white;
     border-radius: 10px;
     margin-top: 20px;
-    padding-left: 10px;
+    padding-left: 20px;
 }
