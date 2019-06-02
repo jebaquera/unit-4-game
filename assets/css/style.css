@@ -30,14 +30,22 @@ h2 {
 } */
 
 
-h3,
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 27px;
+    font-weight: bold;
+    color: midnightblue;
+    padding: 10px 20px 0px 20px;
+    text-align: center;
+}
+
 span {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 27px;
     font-weight: bold;
     color: midnightblue;
-    padding: 20px;
-    text-align: center;
+    padding: 10px;
+    text-align: left;
 }
 
 
@@ -51,12 +59,12 @@ h4 {
 
 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    line-height: 1.5em;
+    font-size: 16px;
+    line-height: 1.75em;
     font-weight: normal;
     color: midnightblue;
     padding: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
     text-align: justify;
 }
 
@@ -79,7 +87,7 @@ p:first-letter {
 .container {
     width: 80%;
     background-color: aliceblue;
-    padding: 40px;
+    padding: 0px 40px 40px 40px;
     border: 9px solid;
     border-color: aliceblue;
 /*  border-radius: 10px; */
@@ -111,17 +119,15 @@ p:first-letter {
     background-color: white;
     border: 9px solid;
     border-color: white;
-    border-radius: 10px;
-    margin-top: 20px;
-    padding-left: 20px;
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 10px;
+    padding: 15px 0px 0px 25px;
 }
 
 .crystalButtons {
     background-color: white;
     border: 9px solid;
     border-color: white;
-    border-radius: 10px;
-    margin-top: 10px;
     padding-left: 60px;
 }
 
@@ -129,7 +135,6 @@ p:first-letter {
     background-color: white;
     border: 9px solid;
     border-color: white;
-    border-radius: 10px;
-    margin-top: 10px;
-    padding-left: 20px;
+    border-radius: 0px 0px 10px 10px;
+    padding: 0px 0px 20px 25px;
 }
