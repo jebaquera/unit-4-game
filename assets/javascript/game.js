@@ -1,10 +1,10 @@
 $(document).ready(function(){
 
 // Generate a random number for player to guess
-var Random = Math.floor(Math.random() * 102 + 19);
+var targetScore = Math.floor(Math.random() * 102 + 19);
     
 // Display random number to player
-$("#scoreToMatch").text(Random);
+$("#scoreToMatch").text(targetScore);
 
 // Generate random number for each crystal
 var numRed = Math.floor(Math.random() * 12 + 1)
@@ -22,9 +22,9 @@ $("#losses").text(losses);
 
 // Reset game
 function reset(){
-    Random = Math.floor(Math.random() * 102 + 19);
-    console.log(Random)
-    $('#scoreToMatch').text(Random);
+  targetScore = Math.floor(Math.random() * 102 + 19);
+    console.log(targetScore)
+    $('#scoreToMatch').text(targetScore);
     numRed = Math.floor(Math.random() * 12 + 1);
     numYellow = Math.floor(Math.random() * 12 + 1);
     numGreen = Math.floor(Math.random() * 12 + 1);
@@ -54,10 +54,10 @@ $(".red-crystal").on ("click", function(){
   console.log("New playerTotal = " + playerTotal);
   $("#userScore").text(playerTotal); 
       //Win & lose conditions
-      if (playerTotal === Random){
+      if (playerTotal === targetScore){
         congrats();
       }
-      else if (playerTotal > Random){
+      else if (playerTotal > targetScore){
         loser();
       }   
 })  
@@ -66,10 +66,10 @@ $(".yellow-crystal").on ("click", function(){
   console.log("New playerTotal = " + playerTotal);
   $("#userScore").text(playerTotal);
       //Win & lose conditions 
-      if (playerTotal === Random){
+      if (playerTotal === targetScore){
         congrats();
       }
-      else if (playerTotal > Random){
+      else if (playerTotal > targetScore){
         loser();
       } 
 })  
@@ -78,10 +78,10 @@ $(".green-crystal").on ("click", function(){
   console.log("New playerTotal = " + playerTotal);
   $("#userScore").text(playerTotal);
       //Win & lose conditions
-      if (playerTotal === Random){
+      if (playerTotal === targetScore){
         congrats();
       }
-      else if (playerTotal > Random){
+      else if (playerTotal > targetScore){
         loser();
       } 
 })  
@@ -90,10 +90,10 @@ $(".blue-crystal").on ("click", function(){
   console.log("New playerTotal = " + playerTotal);
   $("#userScore").text(playerTotal);
       //Win & lose conditions 
-      if (playerTotal === Random){
+      if (playerTotal === targetScore){
         congrats();
       }
-      else if (playerTotal > Random){
+      else if (playerTotal > targetScore){
         loser();
       }
 });   
