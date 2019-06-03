@@ -6,12 +6,12 @@ body {
 
 h1 {
     font-family: 'Jomhuria', sans-serif;
-    font-size: 90px;
+    font-size: 140px;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
-    word-spacing: 0.15em;
+    letter-spacing: 0.05em;
+    word-spacing: 0.10em;
 }
 
 h3 {
@@ -92,9 +92,10 @@ p:first-letter {
 }
 
 .jumbotron h1 {
-    color: rgb(21, 150, 77);
-    text-shadow: 3px 3px ivory;
-/*  text-shadow: -2px -2px yellow; */
+    color: rgb(225, 236, 11);
+  /*  color: rgb(21, 150, 77); */
+    text-shadow: 4px 4px black;
+
 }
 
 .text-center {
