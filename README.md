@@ -1,6 +1,6 @@
 # unit-4-game
 -- Crystals Collector Game --
-How to Play
+• How to Play •
 The computer will auto generate a random number between 19-120. This will be the "target score" that the user will try to match.
 
 At the start of the game the user will have four crystals that have different random values assigned to them. The crystal values are hidden to the player. Players will click on these crystals to add these points to their score.
