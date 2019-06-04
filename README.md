@@ -1,2 +1,2 @@
 # unit-4-game
-Crystal Collector Game files
+Crystals Collector Game files
